@@ -22,7 +22,7 @@ router.post("/product", (req, res, next) => {
   } else {
     const product = req.body.reduce(
       (runningProduct, num) => num * runningProduct,
-      0
+      1
     );
     res.json({ product });
   }
